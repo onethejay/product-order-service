@@ -1,5 +1,8 @@
 package com.example.productorderservice.product;
 
+import com.example.productorderservice.product.application.service.GetProductResponse;
+import com.example.productorderservice.product.application.service.ProductService;
+import com.example.productorderservice.product.application.service.UpdateProductRequest;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -26,7 +29,6 @@ class ProductServiceTest {
 
         assertThat(productResponse.name()).isEqualTo("상품 수정");
         assertThat(productResponse.price()).isEqualTo(2000);
-
     }
 
 }
